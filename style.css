@@ -916,3 +916,54 @@ a,
         transition-duration: .01ms !important;
     }
 }
+
+/* Keep the decorative orbit from creating horizontal page overflow. */
+.orbit-two {
+    transform: translate3d(0, var(--parallax-y, 0px), 0);
+}
+
+@media (max-width: 599px) {
+    .navbar { gap: 10px; }
+
+    .logo {
+        gap: 8px;
+        font-size: clamp(16px, 5vw, 20px);
+        letter-spacing: 0;
+    }
+
+    .logo img { width: 38px; height: 38px; }
+
+    .nav-button {
+        padding: 8px 11px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .hero {
+        grid-template-columns: minmax(0, 1fr);
+        min-height: auto;
+        gap: 16px;
+        padding-block: 55px 35px;
+    }
+
+    .hero-content { min-width: 0; }
+    .hero-visual { min-height: 320px; }
+    .hero-console { width: 170px; }
+    .orbit-one { width: 250px; height: 250px; }
+    .orbit-two { width: 300px; height: 300px; }
+    .hero-badge { min-width: 135px; }
+    .badge-top { top: 30px; right: 0; }
+    .badge-bottom { bottom: 30px; left: 0; }
+    .hero-actions { align-items: flex-start; }
+    .hero-rating { padding-top: 4px; }
+    .trust-strip { grid-template-columns: repeat(2, 1fr); }
+
+    .trust-strip div:nth-child(2) { border-right: 0; }
+    .trust-strip div:nth-child(-n + 2) { border-bottom: 1px solid var(--border); }
+    .heading-row { flex-direction: column; align-items: stretch; }
+    .game-search { width: 100%; }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .hero { padding-block: 70px 45px; }
+}
