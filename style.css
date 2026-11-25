@@ -990,3 +990,9 @@ a,
     );
     transition: transform .2s ease-out;
 }
+
+.hero-console { transition: transform .08s cubic-bezier(.16,1,.3,1); }
+.orbit-one,
+.orbit-two,
+.badge-top,
+.badge-bottom { transition: transform .08s ease-out; }
