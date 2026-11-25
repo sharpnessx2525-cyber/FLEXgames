@@ -343,21 +343,21 @@ if (
         heroPointerLayers.forEach(({ element, strength }) => {
             element.style.setProperty(
                 "--pointer-x",
-                `${(pointerX * 12 * strength).toFixed(2)}px`
+                `${(pointerX * 20 * strength).toFixed(2)}px`
             );
             element.style.setProperty(
                 "--pointer-y",
-                `${(pointerY * 10 * strength).toFixed(2)}px`
+                `${(pointerY * 16 * strength).toFixed(2)}px`
             );
         });
 
         heroConsole.style.setProperty(
             "--pointer-rotate-x",
-            `${(-pointerY * 6).toFixed(2)}deg`
+            `${(-pointerY * 10).toFixed(2)}deg`
         );
         heroConsole.style.setProperty(
             "--pointer-rotate-y",
-            `${(pointerX * 8).toFixed(2)}deg`
+            `${(pointerX * 12).toFixed(2)}deg`
         );
     });
 
