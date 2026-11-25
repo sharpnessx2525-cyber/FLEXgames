@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FLEXgames - Top Up Game Cepat & Terpercaya</title>
+
+    <meta name="description"
+        content="FLEXgames menyediakan layanan top up game cepat dan terpercaya. Pilih game favorit dan metode pembayaran pilihanmu.">
+
+    <meta name="theme-color" content="#09090f">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <h1>FLEX<span>games</span></h1>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p>Preparing your gaming experience...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container" aria-label="Navigasi utama">
+
+            <a href="#" class="logo" aria-label="FLEXgames Home">
+                <img src="assets/flexgames-logo.png" alt="">
+                FLEX<span>games</span>
+            </a>
+
+            <a href="#games" class="nav-button">
+                Top Up Now
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero container">
+
+            <div class="hero-content">
+                <span class="hero-label">WELCOME TO FLEXgames</span>
+
+                <h1>
+                    TOP UP GAME
+                    <span>CEPAT & TERPERCAYA</span>
+                </h1>
+
+                <p>
+                    Isi kebutuhan gaming kamu dengan mudah,
+                    cepat, dan aman bersama FLEXgames.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#games" class="primary-button">
+                        Mulai Top Up
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <div class="hero-rating">
+                        <strong>4.9/5</strong>
+                        <span>Rating pengguna</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-orbit orbit-one"></div>
+                <div class="hero-orbit orbit-two"></div>
+                <div class="hero-badge badge-top">
+                    <span>⚡</span>
+                    <div><strong>Proses Cepat</strong><small>Mendukung QRIS</small></div>
+                </div>
+                <div class="hero-console">
+                    <img class="console-glow" src="assets/flexgames-logo.png" alt="">
+                    <span class="console-mark" aria-hidden="true">FLEX<br>GAMES</span>
+                </div>
+                <div class="hero-badge badge-bottom">
+                    <span>✓</span>
+                    <div><strong>TF Aman</strong><small>Terpercaya</small></div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="trust-strip container" aria-label="Keunggulan FLEXgames">
+            <div><strong>12+</strong><span>Game populer</span></div>
+            <div><strong>&lt; 5 Menit</strong><span>Proses pesanan</span></div>
+            <div><strong>24/7</strong><span>Layanan aktif</span></div>
+            <div><strong>100%</strong><span>Aman & terpercaya</span></div>
+        </div>
+
+        <!-- Games Section -->
+        <section class="games-section container" id="games">
+
+            <div class="section-heading">
+                <span class="section-label">GAME COLLECTION</span>
+                <div class="heading-row">
+                    <div>
+                        <h2>Pilih Game Favoritmu</h2>
+                        <p>Temukan game favorit dan mulai top up sekarang.</p>
+                    </div>
+                    <label class="game-search">
+                        <span aria-hidden="true">⌕</span>
+                        <input id="gameSearch" type="search" placeholder="Cari game..." aria-label="Cari game">
+                    </label>
+                </div>
+            </div>
+
+            <div class="game-grid">
+
+                <article class="game-card"
+                    data-game="roblox" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>RBLX</span>
+                    <img src="assets/roblox.webp"
+                        alt="Roblox" loading="lazy">
+                    <div class="game-info">
+                        <h3>Roblox</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+                <article class="game-card"
+                    data-game="freefire" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>FF</span>
+                    <img src="assets/freefire.webp"
+                        alt="Free Fire" loading="lazy">
+                    <div class="game-info">
+                        <h3>Free Fire</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+                <article class="game-card"
+                    data-game="mobile-legends" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>ML</span>
+                    <img src="assets/mobile-legends.webp"
+                        alt="Mobile Legends" loading="lazy">
+                    <div class="game-info">
+                        <h3>Mobile Legends</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+                <article class="game-card"
+                    data-game="bloodstrike" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>BS</span>
+                    <img src="assets/bloodstrike.webp"
+                        alt="Bloodstrike" loading="lazy">
+                    <div class="game-info">
+                        <h3>Bloodstrike</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+                <article class="game-card"
+                    data-game="magic-chess" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>MCGG</span>
+                    <img src="assets/magic-chess.webp"
+                        alt="Magic Chess" loading="lazy">
+                    <div class="game-info">
+                        <h3>Magic Chess</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+                <article class="game-card"
+                    data-game="pubg-mobile" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>PUBG</span>
+                    <img src="assets/pubg-mobile.webp"
+                        alt="PUBG Mobile" loading="lazy">
+                    <div class="game-info">
+                        <h3>PUBG Mobile</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+                <article class="game-card"
+                    data-game="fc-mobile" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>FCM</span>
+                    <img src="assets/fc-mobile.webp"
+                        alt="FC Mobile" loading="lazy">
+                    <div class="game-info">
+                        <h3>FC Mobile</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+                <article class="game-card"
+                    data-game="efootball" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>EF</span>
+                    <img src="assets/efootball.webp"
+                        alt="eFootball" loading="lazy">
+                    <div class="game-info">
+                        <h3>eFootball</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+                <article class="game-card"
+                    data-game="genshin-impact" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>GI</span>
+                    <img src="assets/genshin-impact.webp"
+                        alt="Genshin Impact" loading="lazy">
+                    <div class="game-info">
+                        <h3>Genshin Impact</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+                <article class="game-card"
+                    data-game="honor-of-kings" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>HOK</span>
+                    <img src="assets/honor-of-kings.webp"
+                        alt="Honor of Kings" loading="lazy">
+                    <div class="game-info">
+                        <h3>Honor of Kings</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+                <article class="game-card"
+                    data-game="call-of-duty" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>COD</span>
+                    <img src="assets/call-of-duty.webp"
+                        alt="Call of Duty" loading="lazy">
+                    <div class="game-info">
+                        <h3>Call of Duty</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+                <article class="game-card"
+                    data-game="brawl-stars" tabindex="0">
+                    <span class="game-fallback" aria-hidden="true" hidden>BSS</span>
+                    <img src="assets/brawl-stars.webp"
+                        alt="Brawl Stars" loading="lazy">
+                    <div class="game-info">
+                        <h3>Brawl Stars</h3>
+                        <span>Top Up Now</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Order Section -->
+        <section class="order-section container" id="order">
+
+            <div class="section-heading">
+                <span class="section-label">ORDER CENTER</span>
+                <h2>Form Top Up</h2>
+                <p>Lengkapi detail pesanan game kamu.</p>
+            </div>
+
+            <form id="orderForm" class="order-form">
+
+                <div class="form-group">
+                    <label for="selectedGame">Game</label>
+                    <input type="text" id="selectedGame"
+                        placeholder="Pilih game terlebih dahulu"
+                        readonly required>
+                </div>
+
+                <div class="form-group">
+                    <label for="playerId">User ID / Player ID</label>
+                    <input type="text" id="playerId"
+                        placeholder="Masukkan User ID"
+                        required maxlength="60">
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Nominal Top Up</label>
+                    <select id="product" required>
+                        <option value="">Pilih nominal</option>
+                        <option value="10000">Rp10.000</option>
+                        <option value="20000">Rp20.000</option>
+                        <option value="50000">Rp50.000</option>
+                        <option value="100000">Rp100.000</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment">Metode Pembayaran</label>
+                    <select id="payment" required>
+                        <option value="">Pilih pembayaran</option>
+                        <option value="QRIS">QRIS</option>
+                        <option value="Transfer Bank">Transfer Bank</option>
+                        <option value="DANA">DANA</option>
+                    </select>
+                </div>
+
+                <div class="order-total">
+                    <span>Total Pembayaran</span>
+                    <strong id="totalPrice">Rp0</strong>
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Lanjutkan Pesanan
+                </button>
+
+            </form>
+
+            <div class="payment-panel" id="paymentPanel" aria-labelledby="paymentTitle" hidden>
+                <span class="section-label">PEMBAYARAN QRIS</span>
+                <h3 id="paymentTitle">Scan untuk membayar</h3>
+                <p>Gunakan aplikasi pembayaran yang mendukung QRIS.</p>
+                <img src="assets/payment-qr.png" alt="Kode QR pembayaran FLEXgames">
+                <p class="payment-amount">Total pembayaran: <strong id="paymentAmount">Rp0</strong></p>
+                <p class="payment-note">Pembayaran didukung oleh gopay,Dana,QRIS,OVO.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Toast Container -->
+    <div class="toast-container"
+        id="toastContainer"
+        role="status"
+        aria-live="polite">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/flexgames-logo.png" alt="FLEXgames">
+            </a>
+            <p>TOP UP GAME CEPAT & TERPERCAYA</p>
+            <small>&copy; 2026 FLEXgames. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>
