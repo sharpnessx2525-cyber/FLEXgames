@@ -311,3 +311,62 @@ orderForm.addEventListener("submit", event => {
 
     showToast("Kode QR pembayaran ditampilkan. Pembayaran belum diverifikasi otomatis.", "success");
 });
+
+const heroVisual = document.querySelector(".hero-visual");
+const heroPointerLayers = [
+    { element: heroConsole, strength: 1 },
+    { element: heroVisual?.querySelector(".orbit-one"), strength: -0.35 },
+    { element: heroVisual?.querySelector(".orbit-two"), strength: -0.2 },
+    { element: heroVisual?.querySelector(".badge-top"), strength: 0.55 },
+    { element: heroVisual?.querySelector(".badge-bottom"), strength: 0.55 }
+].filter(layer => layer.element);
+
+if (
+    !prefersReducedMotion &&
+    heroVisual &&
+    heroConsole &&
+    window.matchMedia("(hover: hover) and (pointer: fine)").matches
+) {
+    heroVisual.addEventListener("pointermove", event => {
+        const bounds = heroVisual.getBoundingClientRect();
+        if (!bounds.width || !bounds.height) return;
+
+        const pointerX = Math.max(-1, Math.min(
+            1,
+            ((event.clientX - bounds.left) / bounds.width - 0.5) * 2
+        ));
+        const pointerY = Math.max(-1, Math.min(
+            1,
+            ((event.clientY - bounds.top) / bounds.height - 0.5) * 2
+        ));
+
+        heroPointerLayers.forEach(({ element, strength }) => {
+            element.style.setProperty(
+                "--pointer-x",
+                `${(pointerX * 12 * strength).toFixed(2)}px`
+            );
+            element.style.setProperty(
+                "--pointer-y",
+                `${(pointerY * 10 * strength).toFixed(2)}px`
+            );
+        });
+
+        heroConsole.style.setProperty(
+            "--pointer-rotate-x",
+            `${(-pointerY * 6).toFixed(2)}deg`
+        );
+        heroConsole.style.setProperty(
+            "--pointer-rotate-y",
+            `${(pointerX * 8).toFixed(2)}deg`
+        );
+    });
+
+    heroVisual.addEventListener("pointerleave", () => {
+        heroPointerLayers.forEach(({ element }) => {
+            element.style.removeProperty("--pointer-x");
+            element.style.removeProperty("--pointer-y");
+        });
+        heroConsole.style.removeProperty("--pointer-rotate-x");
+        heroConsole.style.removeProperty("--pointer-rotate-y");
+    });
+}
